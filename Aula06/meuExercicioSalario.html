@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Meu exercicio</title>
+</head>
+<body>
+    <script>
+        window.alert("Seja bem vindo!");
+        var nome = window.prompt("Digite seu nome!");
+        var valor = window.prompt("Digite um valor que darei em mts, dolares e Reais");
+        var mts = Number.parseFloat(valor).toLocaleString('pt-BR', {style: 'currency', currency:'MZN'});
+        var dolares = Number.parseFloat(valor).toLocaleString('pt-BR', {style: 'currency', currency:'USD'});
+        var real = Number.parseFloat(valor).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+        document.write(`<h1>Seja bem Vindo <strong>${nome}</strong> </h1><br>`);
+        document.write(`Seu nome em Maiusculas <strong>${nome.toUpperCase()}</strong><br>`);
+        document.write(`Valor digitado <strong>${valor}</strong><br>`);
+        document.write(`Dolares: ${dolares}<br>`);
+        document.write(`Reais: ${real}<br>`);
+        document.write(`Meticais: ${mts}<br>`);
+    </script>
+</body>
+</html>

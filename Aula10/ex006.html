@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="/Aula10/css/estilos.css">
+</head>
+<body>
+    <div id = "area" onclick = "clicar()" onmouseenter = "entrar()" onmouseout = "sair()">
+        Interaja...
+    </div>
+    <script>
+        var area = document.querySelector("div#area");
+        function clicar(){
+            //usei o querySelector porque e mais atualizado
+            // mas podia ser tambem getElemetById
+            area.innerText = "Clicou";
+        }
+        function entrar(){
+            area.innerText = "entrou";
+            area.style.backgroundColor = "red";
+        }
+        function sair(){
+            area.style.backgroundColor = "green";
+            area.innerText = "saiu";
+            
+        }
+    </script>
+</body>
+</html>

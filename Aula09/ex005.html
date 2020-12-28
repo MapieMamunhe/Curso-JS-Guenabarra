@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <link rel="stylesheet" href="/Aula09/css/estilos.css">
+</head>
+<body>
+    <h1>
+        Iniciando estudo com DOM
+    </h1>
+    <p>Aqui vai um paragrafo</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">
+        Clique aqui
+    </div>
+    <script>
+        /*Pegando elementos pela marca
+        var p1 = document.getElementsByTagName('p')[1];
+        p1.style.color = 'black';
+       /* var corpo = window.document.body;
+        corpo.style.backgroundColor = 'darkcyan';
+        window.document.write(`Peguei o '${p1.innerText}'`);
+        //document.write(p1.innerHTML);
+        window.alert(p1.innerText);*/
+
+        /*Selecionando elementos por id
+        var msg = window.document.getElementById('msg');
+        msg.style.backgroundColor = "darkgreen";
+        msg.innerText="Aguardando....";
+        */
+       //Pegando elementos usando Selector
+       var s = window.document.querySelector("div#msg");
+       s.style.color = "black";
+
+    </script>
+</body>
+</html>

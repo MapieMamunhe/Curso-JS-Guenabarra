@@ -1,0 +1,31 @@
+body{
+    color: rgb(26, 22, 43);
+    font: normal 16pt times;
+    background-color: lightseagreen;
+}
+div#cabeca{
+    height: 250px;
+    width: 800px;
+    text-align: left;
+    background-color: lightgreen;
+    color: black;
+    border: 3px solid black;
+}
+div#corpo{
+    margin-top: 5px;
+    height: 200px;
+    width: 800px;
+    text-align: center;
+    background-color: lightgrey;
+    color: black;
+    border: black 3px solid;
+}
+div#sobre{
+    margin-top: 100px;
+    width: 800px;
+    height: 20px;
+    text-align: center;
+    background-color: lightgreen;
+    color: black;
+    border: 3px solid black;
+}

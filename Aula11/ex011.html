@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>País de Origem</h1>
+    Digite um pais <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Submeter" onclick="clicar()">
+    <div id="res" >
+
+    </div>
+    <script>
+        
+        function clicar(){
+            var campo = window.document.getElementById("txtp");
+            var pais = campo.value;
+            var escrever = window.document.getElementById("res");
+            if(pais.toLowerCase()=="mocambique"){
+                escrever.innerHTML = `De ${pais}, voce é Moçambicano`;
+            }else{
+                if(pais.toLowerCase()=="moçambique"){
+                    escrever.innerHTML = `De ${pais}, voce é Moçambicano`;
+                }else{
+                    escrever.innerHTML = `De ${pais}, voce é estrangeiro`;
+                }
+            }
+        }
+        var res = window.document.getElementById("res");
+        var estilo = res.style.backgroundColor;
+        res.addEventListener("mouseenter", entrou);
+        res.addEventListener("mouseout", saiu);
+        function entrou(){
+            res.style.backgroundColor = "red";
+        }
+        function saiu(){
+            res.style.backgroundColor = estilo;
+        }
+    </script>
+</body>
+</html>

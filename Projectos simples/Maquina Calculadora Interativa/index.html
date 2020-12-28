@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div id="cabeca">
+        <h1>Menu de Escolha</h1>
+        <ol>
+            <li id="lista"> <a href="html/multiplicar.html">Multiplicação</a></li>
+            <li><a href="html/dividir.html">Divisão</a></li>
+            <li><a href="html/adicionar.html">Adição</a></li>
+            <li><a href="html/subtrair.html">Subtração</a></li>
+        </ol>
+    </div>
+    <div id="corpo">
+        
+    </div>
+    <div id="sobre">
+        <strong>Mapie Victorino Mamunhe-->"Ainda estou a aprender"</strong>
+
+    </div>
+    <script>
+        var esperaCorpo = document.getElementById("corpo");
+        var scorpo = esperaCorpo.innerHTML;
+        esperaCorpo.addEventListener("mouseenter", dentroCorpo);
+        esperaCorpo.addEventListener("mouseout",foraCorpo);
+        function dentroCorpo(){
+            esperaCorpo.style.backgroundColor = "lightblue"; 
+            esperaCorpo.innerHTML="Um pouco de JavaScript";
+        }
+        function foraCorpo(){
+            esperaCorpo.style.backgroundColor = "lightgreen";
+            
+            esperaCorpo.innerHTML = scorpo;
+        }
+
+        var esperaSobre = document.querySelector("div#sobre");
+        //A atribuicao a seguir faz com que eu salve os atributos html 
+        var s = esperaSobre.innerHTML;
+        esperaSobre.addEventListener("mouseenter", dentro);
+        esperaSobre.addEventListener("mouseout", fora);
+        function dentro(){
+            esperaSobre.style.backgroundColor = "lightblue"; 
+            esperaSobre.innerHTML="Um pouco de JavaScript";
+        }
+        function fora(){
+            esperaSobre.style.backgroundColor = "lightgreen";
+            esperaSobre.innerHTML = s;
+
+        }
+    </script>
+</body>
+</html>
